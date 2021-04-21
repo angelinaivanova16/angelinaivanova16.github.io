@@ -21,7 +21,7 @@
         grid-template-columns: repeat(12, 1fr);
         margin: 0;
 
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
       }
       .item:nth-child(1) {
         grid-column: 1/9;
@@ -31,24 +31,25 @@
       .item:nth-child(2) {
         grid-column: 9/13;
         background-color: white;
-        padding: 20px;
+        padding: 30px;
       }
       .item:nth-child(3) {
         grid-column: 1/7;
         grid-row: 2/4;
         background-image: url(./img/2.jpg);
         background-size: cover;
-        padding: 20px;
+        padding: 30px;
         color: white;
-        /* display: flex;
-        flex-direction: column; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
       .item:nth-child(4) {
         grid-column: 7/13;
         grid-row: 2/3;
         background-image: url(./img/3.jpg);
         background-size: cover;
-        padding: 20px;
+        padding: 30px;
         color: darkgray;
       }
       .item:nth-child(5) {
@@ -56,15 +57,18 @@
         grid-row: 3/4;
         background-image: url(./img/4.jpg);
         background-size: cover;
-        padding: 20px;
+        padding: 30px;
         color: white;
       }
       .item:nth-child(6) {
         grid-column: 1/5;
         background-image: url(./img/5.jpg);
         background-size: cover;
-        padding: 20px;
+        padding: 30px;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
       .item:nth-child(7) {
         grid-column: 5/13;
@@ -126,7 +130,7 @@
         border-radius: 10px;
         text-decoration: none;
         color: darkgray;
-        }
+      }
 
       /* седьмой элемент */
       .sayhello {
@@ -236,6 +240,7 @@
       </p>
     </div>
     <div class="item">
+    <div>
       <h1>Drawing <span class="highlight">Scketch</span></h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vero,
@@ -246,6 +251,8 @@
         suscipit officiis. Voluptates architecto dicta alias, iure eius
         inventore! Dolore, ducimus cumque assumenda asperiores est nobis.
       </p>
+    </div>
+    <div>
       <h1>Making <span class="highlight">Design</span></h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vero,
@@ -256,6 +263,8 @@
         suscipit officiis. Voluptates architecto dicta alias, iure eius
         inventore! Dolore, ducimus cumque assumenda asperiores est nobis.
       </p>
+    </div>
+    <div>
       <h1>Developing <span class="highlight">Product</span></h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vero,
@@ -266,6 +275,7 @@
         suscipit officiis. Voluptates architecto dicta alias, iure eius
         inventore! Dolore, ducimus cumque assumenda asperiores est nobis.
       </p>
+    </div>
     </div>
     <div class="item">
       <h1>Best <span class="highlight">Starting</span></h1>
@@ -294,11 +304,17 @@
       <a href="#" class="history">Go To The Page</a>
     </div>
     <div class="item">
-      <h1>This Webpage Is<br>
-      <span class="highlight">Designed By</span></h1>
-      <img src="./img/logo.png">
-      <p><span class="highlight">Ali Sayed</span></p>
-      <p>Graphic Designer</p>
+      <div>
+        <h1>
+          This Webpage Is<br />
+          <span class="highlight">Designed By</span>
+        </h1>
+      </div>
+      <div>
+        <img src="./img/logo.png" />
+        <p><span class="highlight">Ali Sayed</span></p>
+        <p>Graphic Designer</p>
+      </div>
     </div>
     <div class="item">
       <h1 class="sayhello">Say <span class="highlight">'Hello'</span></h1>
@@ -321,9 +337,9 @@
       <div class="signs">
         <p>Stay Connected With Us...</p>
         <div class="buttons">
-          <a href="#" class="one">a</a>
-          <a href="#" class="two">b</a>
-          <a href="#" class="three">c</a>
+          <a href="#" class="one"><span class="lnr lnr-location"></span></a>
+          <a href="#" class="two"><span class="lnr lnr-thumbs-up"></span></a>
+          <a href="#" class="three"><span class="lnr lnr-thumbs-down"></span></a>
         </div>
         <p>Please Feel Free To Contat With me For Any Kind of Prject.</p>
       </div>
