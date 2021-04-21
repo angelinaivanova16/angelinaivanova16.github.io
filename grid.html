@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-rows: 715px repeat(2, 427px) 715px;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0;
+
+        font-family: 'Roboto', sans-serif;
+      }
+      .item:nth-child(1) {
+        grid-column: 1/9;
+        background-image: url(./img/1.png);
+        background-size: cover;
+      }
+      .item:nth-child(2) {
+        grid-column: 9/13;
+        background-color: white;
+        padding: 20px;
+      }
+      .item:nth-child(3) {
+        grid-column: 1/7;
+        grid-row: 2/4;
+        background-image: url(./img/2.jpg);
+        background-size: cover;
+        padding: 20px;
+        color: white;
+        /* display: flex;
+        flex-direction: column; */
+      }
+      .item:nth-child(4) {
+        grid-column: 7/13;
+        grid-row: 2/3;
+        background-image: url(./img/3.jpg);
+        background-size: cover;
+        padding: 20px;
+        color: darkgray;
+      }
+      .item:nth-child(5) {
+        grid-column: 7/13;
+        grid-row: 3/4;
+        background-image: url(./img/4.jpg);
+        background-size: cover;
+        padding: 20px;
+        color: white;
+      }
+      .item:nth-child(6) {
+        grid-column: 1/5;
+        background-image: url(./img/5.jpg);
+        background-size: cover;
+        padding: 20px;
+        color: white;
+      }
+      .item:nth-child(7) {
+        grid-column: 5/13;
+        background-image: url(./img/6.png);
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 70px 50px;
+      }
+      h1 {
+        font-weight: lighter;
+      }
+      .highlight {
+        font-weight: bold;
+      }
+      /* второй элемент */
+      .menu {
+        position: relative;
+        display: inline-block;
+      }
+      .menu > a {
+        text-decoration: none;
+        /* padding: 16px; */
+        font-size: 50px;
+        color: black;
+      }
+      .sub-menu {
+        display: none;
+        position: absolute;
+        top: -15px;
+        list-style: none;
+      }
+      .sub-menu li {
+        color: black;
+        padding: 12px;
+        /* display: block; */
+      }
+      li > a {
+        text-decoration: none;
+        padding: 16px;
+        font-size: 20px;
+        color: black;
+      }
+
+      .menu:hover .sub-menu {
+        display: block;
+      }
+
+      .menu:hover a {
+        background-color: #ece1cf;
+      }
+
+      /* третий элемент */
+      .history {
+        padding: 10px 30px;
+        background-color: black;
+        border-radius: 10px;
+        text-decoration: none;
+        color: darkgray;
+        }
+
+      /* седьмой элемент */
+      .sayhello {
+        color: white;
+      }
+      fieldset {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        border: none;
+      }
+      fieldset > div {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+      .message {
+        padding: 15px 215px 100px 15px;
+      }
+      input {
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        padding: 15px;
+      }
+      ::placeholder {
+        color: white;
+      }
+      .signs {
+        display: flex;
+        flex-direction: column;
+
+        color: white;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: row;
+      }
+      .one {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        margin: 2px;
+        background-color: blue;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+      }
+      .two {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        margin: 2px;
+        background-color: rgb(194, 34, 159);
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+      }
+      .three {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        margin: 2px;
+        background-color: rgb(85, 198, 212);
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item"></div>
+    <div class="item">
+      <div class="menu">
+        <a href="#"><span class="lnr lnr-menu"></span></a>
+        <ul class="sub-menu">
+          <li><a href="#1">Lorem</a></li>
+          <li><a href="#2">Lorem</a></li>
+          <li><a href="#3">Lorem</a></li>
+        </ul>
+      </div>
+      <h1>
+        Ali Sayed`s<br />
+        <span class="highlight">Designing</span><br />
+        Project
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, odit? Eum
+        id praesentium, similique consequuntur ad debitis laboriosam voluptatem,
+        unde dolores obcaecati molestiae? Veritatis veniam tempora autem ex,
+        vero modi?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, odit? Eum
+        id praesentium, similique consequuntur ad debitis laboriosam voluptatem,
+        unde dolores obcaecati molestiae? Veritatis veniam tempora autem ex,
+        vero modi?
+      </p>
+    </div>
+    <div class="item">
+      <h1>Drawing <span class="highlight">Scketch</span></h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vero,
+        laudantium ut iusto exercitationem rerum odio facere non expedita
+        perspiciatis excepturi, maiores tempora ab, repudiandae unde cum
+        necessitatibus consequatur ipsam. Reiciendis debitis id nam! Quisquam
+        debitis nulla nesciunt? Maxime odio libero, inventore nulla quisquam
+        suscipit officiis. Voluptates architecto dicta alias, iure eius
+        inventore! Dolore, ducimus cumque assumenda asperiores est nobis.
+      </p>
+      <h1>Making <span class="highlight">Design</span></h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vero,
+        laudantium ut iusto exercitationem rerum odio facere non expedita
+        perspiciatis excepturi, maiores tempora ab, repudiandae unde cum
+        necessitatibus consequatur ipsam. Reiciendis debitis id nam! Quisquam
+        debitis nulla nesciunt? Maxime odio libero, inventore nulla quisquam
+        suscipit officiis. Voluptates architecto dicta alias, iure eius
+        inventore! Dolore, ducimus cumque assumenda asperiores est nobis.
+      </p>
+      <h1>Developing <span class="highlight">Product</span></h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vero,
+        laudantium ut iusto exercitationem rerum odio facere non expedita
+        perspiciatis excepturi, maiores tempora ab, repudiandae unde cum
+        necessitatibus consequatur ipsam. Reiciendis debitis id nam! Quisquam
+        debitis nulla nesciunt? Maxime odio libero, inventore nulla quisquam
+        suscipit officiis. Voluptates architecto dicta alias, iure eius
+        inventore! Dolore, ducimus cumque assumenda asperiores est nobis.
+      </p>
+    </div>
+    <div class="item">
+      <h1>Best <span class="highlight">Starting</span></h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vero,
+        laudantium ut iusto exercitationem rerum odio facere non expedita
+        perspiciatis excepturi, maiores tempora ab, repudiandae unde cum
+        necessitatibus consequatur ipsam. Reiciendis debitis id nam! Quisquam
+        debitis nulla nesciunt? Maxime odio libero, inventore nulla quisquam
+        suscipit officiis. Voluptates architecto dicta alias, iure eius
+        inventore! Dolore, ducimus cumque assumenda asperiores est nobis.
+      </p>
+      <a href="#" class="history">View Our History</a>
+    </div>
+    <div class="item">
+      <h1>Verified <span class="highlight">Dummy</span></h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vero,
+        laudantium ut iusto exercitationem rerum odio facere non expedita
+        perspiciatis excepturi, maiores tempora ab, repudiandae unde cum
+        necessitatibus consequatur ipsam. Reiciendis debitis id nam! Quisquam
+        debitis nulla nesciunt? Maxime odio libero, inventore nulla quisquam
+        suscipit officiis. Voluptates architecto dicta alias, iure eius
+        inventore! Dolore, ducimus cumque assumenda asperiores est nobis.
+      </p>
+      <a href="#" class="history">Go To The Page</a>
+    </div>
+    <div class="item">
+      <h1>This Webpage Is<br>
+      <span class="highlight">Designed By</span></h1>
+      <img src="./img/logo.png">
+      <p><span class="highlight">Ali Sayed</span></p>
+      <p>Graphic Designer</p>
+    </div>
+    <div class="item">
+      <h1 class="sayhello">Say <span class="highlight">'Hello'</span></h1>
+      <div class="forms">
+        <form action="">
+          <fieldset>
+            <div>
+              <input class="info" type="text" placeholder="Your name" />
+              <input class="info" type="text" placeholder="Your Email" />
+            </div>
+
+            <input
+              class="message"
+              type="text"
+              placeholder="Your Message Here ..."
+            />
+          </fieldset>
+        </form>
+      </div>
+      <div class="signs">
+        <p>Stay Connected With Us...</p>
+        <div class="buttons">
+          <a href="#" class="one">a</a>
+          <a href="#" class="two">b</a>
+          <a href="#" class="three">c</a>
+        </div>
+        <p>Please Feel Free To Contat With me For Any Kind of Prject.</p>
+      </div>
+    </div>
+  </body>
+</html>
